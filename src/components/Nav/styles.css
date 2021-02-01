@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(88, 88, 88);
+}
+.nav-link {
+  color: white;
+}
+
+.nav-link a {
+  color: white;
+}
