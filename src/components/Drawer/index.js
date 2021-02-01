@@ -1,6 +1,6 @@
 import React from "react";
-import { Drawer, ButtonToolbar, IconButton, Button } from "rsuite";
-import ReactMarkdown from "react-markdown";
+import { Drawer, Button } from "rsuite";
+// import ReactMarkdown from "react-markdown";
 // import { CopyBlock, dracula } from "react-code-blocks";
 import { CodeBlock } from "react-code-blocks";
 
@@ -38,18 +38,7 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <ButtonToolbar>
-          <IconButton onClick={() => this.toggleDrawer("left")}>
-            Left
-          </IconButton>
-          <IconButton onClick={() => this.toggleDrawer("right")}>
-            Right
-          </IconButton>
-          <IconButton onClick={() => this.toggleDrawer("top")}>Top</IconButton>
-          <IconButton onClick={() => this.toggleDrawer("bottom")}>
-            Bottom
-          </IconButton>
-        </ButtonToolbar>
+        <h1 onClick={() => this.toggleDrawer("left")}>M.E.R.N Stack</h1>
 
         <Drawer
           placement={this.state.placement}
@@ -60,7 +49,7 @@ class Demo extends React.Component {
             <Drawer.Title>How to: React</Drawer.Title>
           </Drawer.Header>
           <Drawer.Body>
-            <p>
+            <p className="text-center">
               React is an open-source, front end, JavaScript library for
               building user interfaces or UI components.
             </p>

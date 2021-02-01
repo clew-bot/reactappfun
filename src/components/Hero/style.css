@@ -1,11 +1,11 @@
-.hero {
+.myName {
   height: 500px;
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
-.hero::after {
+.myName::after {
   content: "";
   display: block;
   opacity: 0.4;
@@ -17,18 +17,17 @@
   background: black;
 }
 
-.hero * {
+.myName * {
   position: relative;
   z-index: 2;
 }
 
-.hero h1,
-.hero h2,
-.hero h3 {
+.myName h1,
+.myName {
   color: white;
 }
 
-.hero h1 {
+.myName h1 {
   font-size: 60px;
   padding-top: 140px;
   margin-top: 0;

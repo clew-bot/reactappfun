@@ -8,6 +8,7 @@ import Notification from "../components/Notification";
 import Picture from "../components/images/wallpaper.jpg";
 import Delayed from "../components/StateText";
 import Demo from "../components/Drawer";
+import Incremental from "../components/Counter";
 function About() {
   return (
     <div>
@@ -17,7 +18,7 @@ function About() {
           <h1>Chad Lew</h1>
         </Delayed>
         <h2>Full-Stack Developer</h2>
-        <h3>M.E.R.N Stack</h3>
+        <h3>{/* <Demo>M</Demo> */}</h3>
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row>
@@ -25,37 +26,32 @@ function About() {
             Reliable, Flexible, and Focused-Driven Developer Looking for Work
           </h2>
           <Notification />
-          <Demo />
         </Row>
+        <Incremental />
         <Row>
           <Col size="md-12">
             <p>Hey, I'm Chad Lew</p>
             <p>
-              I started coding in mid 2020's with the goal of becoming an
-              employed software developer somewhere. I'm still on course
-              learning as many useful tools that comes in my way. I specialize
-              in the M.E.R.N stack because I believe noSQL is the future of
-              large scaleable databases, React library for rendering components,
-              Express framework for building a fully-fledged web application,
-              and Node as the main runtime environment for Javascript.
+              <Demo />
+              My journey of coding was initiated in mid 2020's with the goal of
+              becoming an employed software developer somewhere. I'm still on
+              course learning as many useful tools that comes in my way. I
+              specialize in the M.E.R.N stack because I believe noSQL is the
+              future of large scaleable databases, React library for rendering
+              components, Express framework for building a fully-fledged web
+              application, and Node as the main runtime environment for
+              Javascript.
             </p>
-            <p>
-              Etiam ut massa efficitur, gravida sapien non, condimentum sapien.
-              Suspendisse massa tortor, facilisis in neque sit amet, scelerisque
-              elementum tortor. Nullam eget nibh sit amet odio lobortis
-              ullamcorper. Nulla bibendum magna nec sem pulvinar lobortis.
-              Mauris et imperdiet urna, vitae lobortis dui. Nunc elementum elit
-              mi, non mattis enim congue at. Proin mi lectus, ullamcorper id
-              hendrerit eu, ultricies vitae lacus. Nunc vehicula, erat eget
-              laoreet condimentum, felis ante malesuada leo, nec efficitur diam
-              nisi eget nisi. Cras arcu lacus, tristique in bibendum vitae,
-              elementum eget lorem. Maecenas vestibulum volutpat orci eu
-              pharetra. Praesent vel blandit ante, nec faucibus libero. Sed
-              ultrices lorem ex, eu facilisis libero convallis ac. Vivamus id
-              dapibus eros. Nullam tempor sem rhoncus porta semper. Proin
-              bibendum vulputate nisl, fringilla interdum elit pulvinar eu.
-              Quisque vitae quam dapibus, vestibulum mauris quis, laoreet massa.
-            </p>
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSf5dOsjtfJggOCOS-ljsuOS2BoBBlyMRA7dSLzuk1fzDOzQCA/viewform?embedded=true"
+              width="640"
+              height="705"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+            >
+              Loading…
+            </iframe>
           </Col>
         </Row>
       </Container>

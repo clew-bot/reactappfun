@@ -17,11 +17,9 @@ function newNav() {
         </Nav.Item>
         <Nav.Item>
           <Link to="/search" className="nav-link">
-            Search
+            Books
           </Link>
         </Nav.Item>
-        <Nav.Item>Products</Nav.Item>
-        <Nav.Item>About</Nav.Item>
       </Nav>
     </div>
   );
