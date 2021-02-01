@@ -9,11 +9,14 @@ import Picture from "../components/images/wallpaper.jpg";
 import Delayed from "../components/StateText";
 import Demo from "../components/Drawer";
 import Incremental from "../components/Counter";
+import Cary from "../components/Carousel";
 function About() {
   return (
     <div>
       {/* use here */}
-      <Hero backgroundImage={Picture}>
+
+      <Cary />
+      <Hero>
         <Delayed waitBeforeShow={1000}>
           <h1>Chad Lew</h1>
         </Delayed>
@@ -22,15 +25,22 @@ function About() {
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row>
-          <h2>
-            Reliable, Flexible, and Focused-Driven Developer Looking for Work
-          </h2>
-          <Notification />
+          <h2>Reliable,</h2>
         </Row>
+        <Row>
+          <h2>Flexible,</h2>
+        </Row>
+        <Row>
+          <h2>&</h2>
+        </Row>
+        <Row>
+          <h2>Focused-Driven Developer</h2>
+        </Row>
+        <Notification />
+
         <Incremental />
         <Row>
           <Col size="md-12">
-            <p>Hey, I'm Chad Lew</p>
             <p>
               <Demo />
               My journey of coding was initiated in mid 2020's with the goal of
