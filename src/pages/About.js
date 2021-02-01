@@ -4,45 +4,40 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import Notification from "../components/Notification";
+// if we want to use an image, we can simply grab it using an import and giving it a unique variable name //
+import Picture from "../components/images/wallpaper.jpg";
+import Delayed from "../components/StateText";
+import Demo from "../components/Drawer";
 function About() {
   return (
     <div>
-      <Hero backgroundImage="https://i.imgur.com/qkdpN.jpg">
-        <h1>Pupster</h1>
-        <h2>They're the Good Boys and Girls</h2>
+      {/* use here */}
+      <Hero backgroundImage={Picture}>
+        <Delayed waitBeforeShow={1000}>
+          <h1>Chad Lew</h1>
+        </Delayed>
+        <h2>Full-Stack Developer</h2>
+        <h3>M.E.R.N Stack</h3>
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row>
-          <h1>Welcome To Pupster!</h1>
+          <h2>
+            Reliable, Flexible, and Focused-Driven Developer Looking for Work
+          </h2>
           <Notification />
+          <Demo />
         </Row>
         <Row>
           <Col size="md-12">
+            <p>Hey, I'm Chad Lew</p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              aliquet diam tortor, id consequat mauris ullamcorper eu. Orci
-              varius natoque penatibus et magnis dis parturient montes, nascetur
-              ridiculus mus. Pellentesque et dui id justo finibus sollicitudin
-              at et metus. Ut feugiat tellus nec metus commodo, sed suscipit
-              nisi gravida. Duis eget vestibulum quam, ut porttitor sem. Donec
-              sagittis mi sollicitudin turpis semper, et interdum risus
-              lobortis. Vestibulum suscipit nunc non egestas tristique. Proin
-              hendrerit efficitur malesuada. Mauris lorem urna, sodales accumsan
-              quam non, tristique tempor erat. Nullam non sem facilisis, tempus
-              tortor sit amet, volutpat nisl. Ut et turpis non nunc maximus
-              mollis a vitae tortor. Pellentesque mattis risus ac quam laoreet
-              cursus. Praesent suscipit orci neque, vestibulum tincidunt augue
-              tincidunt non. Duis consequat mattis tortor vitae mattis.
-            </p>
-            <p>
-              Phasellus at rutrum nisl. Praesent sed massa ut ipsum bibendum
-              porttitor. Sed malesuada molestie velit ac viverra. Quisque a
-              ullamcorper purus. Curabitur luctus mi ac mi hendrerit semper.
-              Nulla tincidunt accumsan lobortis. Mauris convallis sapien non
-              nibh porta accumsan. Nunc volutpat tempus porttitor. Nunc congue
-              dictum egestas. Aliquam blandit mi eu urna scelerisque, vitae
-              volutpat ligula ultricies. Maecenas vel porta augue. Fusce mauris
-              ex, dignissim et lacinia ut, tempus eget nibh.
+              I started coding in mid 2020's with the goal of becoming an
+              employed software developer somewhere. I'm still on course
+              learning as many useful tools that comes in my way. I specialize
+              in the M.E.R.N stack because I believe noSQL is the future of
+              large scaleable databases, React library for rendering components,
+              Express framework for building a fully-fledged web application,
+              and Node as the main runtime environment for Javascript.
             </p>
             <p>
               Etiam ut massa efficitur, gravida sapien non, condimentum sapien.

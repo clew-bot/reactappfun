@@ -3,7 +3,11 @@ import "./style.css";
 
 function Hero(props) {
   return (
-    <div className="hero text-center" style={{ backgroundImage: `url(${props.backgroundImage})` }}>
+    //setting the property of the background using props, then any component that wants to use any of these variables can just use the key. //
+    <div
+      className="hero text-center"
+      style={{ backgroundImage: `url(${props.backgroundImage})` }}
+    >
       {props.children}
     </div>
   );
