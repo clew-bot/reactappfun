@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "rsuite";
 import CaryImage from "../images/CaryImage/IMG_4040.jpg";
+import "./styles.css";
 
 function Cary() {
   return (
