@@ -12,6 +12,7 @@ import Incremental from "../components/Counter";
 import Cary from "../components/Carousel";
 import { Grid, Row, Col } from "rsuite";
 import Stepper from "../components/Stepper";
+import Wow from "../components/Wowzer";
 function About() {
   return (
     <>
@@ -35,6 +36,7 @@ function About() {
           </Col>
         </Row>
       </Grid>
+      <Wow />
       <Stepper />
       <div>
         {/* use here */}
